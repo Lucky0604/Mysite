@@ -5,7 +5,7 @@ First full-stack project practice demo. (actrually,it's a MEAN project)
   
 Mongodb as the database.  
 Express as the backend framework.  
-Angular as the front-end framework. 
+Angular as the front-end framework.   
 NODE as the webserver.
 
 all the css work comes from the less.
