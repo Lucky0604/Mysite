@@ -1,0 +1,108 @@
+@columnWidth: 60px;
+@gutter: 10px;
+@allColumns: @columnWidth * 12;
+@allGutters: (@gutter*12) * 2;
+@totalWidth: @allColumns + @allGutters;
+.theWidth(@theColumn: 1, @theGutter: 0) {
+    width: (@columnWidth * @theColumn) + (@gutter * @theGutter)
+}
+
+.grid_1 {
+    width: @columnWidth;
+}
+
+.grid_2 {
+    width: (@columnWidth * 2) + (@gutter * 2);
+}
+
+.grid_3 {
+    width: (@columnWidth * 3) + (@gutter * 4);
+}
+
+.grid_4 {
+    width: (@columnWidth * 4) + (@gutter * 6);
+}
+
+.grid_5 {
+    width: (@columnWidth * 5) + (@gutter * 8);
+}
+
+.grid_6 {
+    width: (@columnWidth * 6) + (@gutter * 10);
+}
+
+.grid_7 {
+    width: (@columnWidth * 7) + (@gutter * 12);
+}
+
+.grid_8 {
+    width: (@columnWidth * 8) + (@gutter * 14);
+}
+
+.grid_9 {
+    width: (@columnWidth * 9) + (@gutter * 16);
+}
+
+.grid_10 {
+    width: (@columnWidth * 10) + (@gutter * 18);
+}
+
+.grid_11 {
+    width: (@columnWidth * 11) + (@gutter * 20);
+}
+
+.grid_12 {
+    width: (@columnWidth * 12) + (@gutter * 22);
+}
+
+.column {
+    margin: 0 @gutter;
+    overflow: hidden;
+    float: left;
+    display: inline;
+}
+
+.row {
+    width: @totalWidth;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.row .row {
+    margin: 0 (@gutter*-1);
+    width: auto;
+    display: inline-block;
+}
+
+.navbar{
+	height:40px;
+	width:100%;
+	line-height:40px;
+}
+.navbar-black{
+	background:#000;
+	color:#fff;
+}
+.content{
+	margin-top:10px;
+}
+
+.box{
+	border:1px solid #fff;
+	box-shadow:0px 4px 8px rgba(0,0,0,0.4);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,21 @@
+<div class="navbar navbar-black">
+    <span>Code change the world!</span>
+    <span style="float:right;margin-right:10px;"><a href="#/blog" style="color:#fff;">主页</a></span>
+    <span style="float:right;margin-right:10px;"><a href="#/blog/page1" style="color:#fff">发表文章</a></span>
+
+</div>
+<div ui-view>
+    <div class="row content">
+        <div class="grid_4 column">
+            <h1>Profile</h1>
+        </div>
+        <div class="grid_8 column">
+            <ul>
+                <li ng-repeat="blog in blogs">
+                    <h4>{{blog.title}}</h4>
+                    <p>{{blog.content}}</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
