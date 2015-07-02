@@ -8,7 +8,10 @@ Express as the backend framework.
 Angular as the front-end framework.   
 NODE as the webserver.
 
-all the css work comes from the less.
+all the css work comes from the less.  
+
+by the way:  
+Using grunt as a project automation tool.
 
 # How to use it
 git clone this project.  
