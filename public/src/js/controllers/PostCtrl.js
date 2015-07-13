@@ -9,6 +9,7 @@ angular.module('PostCtrl',[])
 			});
 			q.success(function(response){
 				alert(response.message);
+				$scope.blogs = '';
 			});
 		};
 	});

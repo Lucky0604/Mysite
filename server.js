@@ -52,7 +52,29 @@ router.route('/Blog')
             res.json({message:blog});
         });
     });
+router.route('/Blog/:blog_id')
+    //获取每条blog的详情
+    .get(function(req, res){
+        Blog.findById(req.params.blog_id, function(err, blog){
+            if(err){
+                res.send(err);
+            };
+            res.json({message:blog});
+        })
+    })
+    //编辑每条blog的信息
+    .put(function(req, res){
+        Blog.findById(req.params.blog_id, function(err, blog){
+            if(err){
+                res.send(err);
+            };
+            blog.title = req.body.title;
+            blog.content = req.body.content;
+            blog.save(function(err){
 
+            })
+        })
+    })
 app.use('/api',router);
 //设定端口
 var port = process.env.PORT || 5000;

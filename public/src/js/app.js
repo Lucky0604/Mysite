@@ -19,6 +19,7 @@ app.config(function($stateProvider, $urlRouterProvider) {
             controller: 'PostCtrl'
         });
     $urlRouterProvider.otherwise('/main');
+
 });
 
 app.controller('MainCtrl', function($scope) {

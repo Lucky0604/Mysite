@@ -1,21 +1,43 @@
-<div class="navbar navbar-black">
-    <span>Code change the world!</span>
-    <span style="float:right;margin-right:10px;"><a href="#/blog" style="color:#fff;">主页</a></span>
-    <span style="float:right;margin-right:10px;"><a href="#/blog/page1" style="color:#fff">发表文章</a></span>
+<div class="navbar navbar-white">
+    <div class="head_logo">
+        <span>SoftTeam</span>
+    </div>
+    <ul class="navbar-right">
+        <li><a href="#/blog">Home</a></li>
+        <li><a href="#/blog">About me</a></li>
+        <li><a href="#/blog">Project</a></li>
+        <li><a href="#/blog/page1">Post</a></li>
+    </ul>
 
 </div>
 <div ui-view>
     <div class="row content">
-        <div class="grid_4 column">
-            <h1>Profile</h1>
+        <div class="grid_3 column">
+            <div class="profile_box">
+                <div class="profile">
+                    <img src="../src/img/me.png"/>
+                    <h3>Lucky</h3>
+                    <p style="font-size: 14px;">WEB Front-end developer&UE Designer</p>
+                    <p class="small">Hope to be a fsd lol.</p>
+                    <button class="btn btn-block btn-blue">Follow me on Twitter!</button>
+                    <button class="btn btn-block btn-blue">Follow me on Weibo!</button>
+                    <button class="btn btn-block btn-blue">Contact me!</button>
+                </div>
+            </div>
         </div>
-        <div class="grid_8 column">
-            <ul>
-                <li ng-repeat="blog in blogs">
-                    <h4>{{blog.title}}</h4>
-                    <p>{{blog.content}}</p>
-                </li>
-            </ul>
+        <div class="grid_9 column">
+            <div class="gallery_box">
+                This is gallery
+            </div>
+            <div class="content_box">
+                <ul>
+                    <li ng-repeat="blog in blogs">
+                        <a href="#">{{blog.title}}</a>
+                        <!--<p>{{blog.content}}</p>-->
+                    </li>
+                </ul>
+            </div>
+
         </div>
     </div>
 </div>
