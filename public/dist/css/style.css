@@ -146,3 +146,14 @@
   background-color: #fff;
   border-radius: 8px;
 }
+.content_box ul {
+  list-style: none;
+  line-height: 1.5;
+}
+.content_box ul li a {
+  text-decoration: none;
+  color: #393939;
+}
+.content_box ul li a:hover {
+  color: #b0afaf;
+}
